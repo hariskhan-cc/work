@@ -6599,3 +6599,8 @@ svg {
 .gallery-item > div > a:focus {
   box-shadow: 0 0 0 2px #0073aa;
 }
+label.error {
+	display: block;
+	background: #ffd2d2;
+	padding: 0 10px;
+}
