@@ -1,5 +1,8 @@
 <?php
 require_once get_template_directory().'/includes/assets.php';
+require_once get_template_directory().'/includes/custom_post_types.php';
+require_once get_template_directory().'/includes/menus.php';
+
 
 
 
@@ -117,7 +120,7 @@ require_once get_template_directory().'/includes/assets.php';
     {
         ?>
            <!-- <input type="file" name="head_logo" id="head_logo" value="<?php echo get_option('head_logo'); ?>" /> -->
-           <input id="head_logo" class="head_logo" name="head_logo" type="hidden" value="<?php echo get_option('head_logo'); ?>">
+           <input id="header_logo" class="head_logo" name="head_logo" type="hidden" value="<?php echo get_option('head_logo'); ?>">
                 <div style="display: none;" class="head_logo">
                     <img src="<?php echo get_option('head_logo'); ?>" width="150" height="80"/>
                 </div>
@@ -128,7 +131,7 @@ require_once get_template_directory().'/includes/assets.php';
     {
         ?>
             <!-- <input type="file" name="footer_logo" id="footer_logo" value="<?php echo get_option('footer_logo'); ?>" /> -->
-            <input id="footer_logo" class="footer_logo" name="footer_logo" type="hidden" value="<?php echo get_option('footer_logo'); ?>">
+            <input id="foot_logo" class="footer_logo" name="footer_logo" type="hidden" value="<?php echo get_option('footer_logo'); ?>">
                 <div style="display: none;" class="footer_logo">
                     <img src="<?php echo get_option('footer_logo'); ?>" width="150" height="80"/>
                 </div>
@@ -140,7 +143,7 @@ require_once get_template_directory().'/includes/assets.php';
     {
         ?>
             <!-- <input type="file" name="favicon" id="favicon" value="<?php echo get_option('favicon'); ?>" /> -->
-            <input id="favicon" class="favicon" name="favicon" type="hidden" value="<?php echo get_option('favicon'); ?>">
+            <input id="fav_icon" class="favicon" name="favicon" type="hidden" value="<?php echo get_option('favicon'); ?>">
                 <div style="display: none;" class="favicon">
                     <img src="<?php echo get_option('favicon'); ?>" width="150" height="80"/>
                 </div>
